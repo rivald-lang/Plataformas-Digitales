@@ -42,7 +42,10 @@ setInterval(() => {
 
   window.addEventListener('scroll', function() {
     const menu = document.querySelector('.menu');
-    if (window.scrollY > 100) {
+    const breakpoint = 991; 
+  
+
+    if (window.scrollY > 100 && window.innerWidth > breakpoint) {
       menu.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     } else {
       menu.style.backgroundColor = '';
