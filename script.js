@@ -40,7 +40,7 @@ setInterval(() => {
     document.getElementById("contador").textContent = `${horas.toString().padStart(2, "0")}:${minutos.toString().padStart(2, "0")}:${segundos.toString().padStart(2, "0")}`;
   }, 1000);
 
-  window.addEventListener('scroll', function() {
+   window.addEventListener('scroll', function() {
     const menu = document.querySelector('.menu');
     const breakpoint = 991; 
   
